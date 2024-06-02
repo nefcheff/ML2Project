@@ -1,6 +1,7 @@
 # ML2Project
 ## 1. Project Motivation
    What is the problem you are trying to solve? What is the motivation behind it? Why is your project relevant?
+   
    Agricultural productivity is the backbone of global food security, and maize is one of the world's most important crops. However, maize crops are constantly threatened by various diseases    that can severely affect yield and quality. This is where the classification of maize diseases becomes crucial.
    Accurate disease classification in maize is important for several reasons:
 
