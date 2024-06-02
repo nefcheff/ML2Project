@@ -18,8 +18,8 @@
       prevent devastating economic losses, ensure the stability of the agricultural sector and secure farmers' livelihoods.
 
       4. promotion of scientific research: 
-      Disease classification of maize is essential for scientific research and contributes to the development of resistant plant varieties. 
-      This research is critical to long-term food security, especially in the face of climate change and evolving pathogens.
+      Disease classification of maize is essential for scientific research and contributes to the development of resistant plant 
+      varieties. This research is critical to long-term food security, especially in the face of climate change and evolving pathogens.
 
       5. global food security: 
       Maize is a staple food for millions of people around the world. Effective disease management ensures a steady supply 
