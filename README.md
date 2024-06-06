@@ -1,9 +1,11 @@
 # ML2Project
+
 ## 1. Project Motivation
-   What is the problem you are trying to solve? What is the motivation behind it? Why is your project relevant?
-   
-   Agricultural productivity is the backbone of global food security, and maize is one of the world's most important crops. However, maize crops are constantly threatened by various     diseases    that can severely affect yield and quality. This is where the classification of maize diseases becomes crucial.
-   
+
+What is the problem you are trying to solve? What is the motivation behind it? Why is your project relevant?
+
+Agricultural productivity is the backbone of global food security, and maize is one of the world's most important crops. However, maize crops are constantly threatened by various diseases that can severely affect yield and quality. This is where the classification of maize diseases becomes crucial.
+
 ### Accurate disease classification in maize is important for several reasons:
 
 **1. increasing crop yield:**
@@ -21,12 +23,28 @@ Disease classification of maize is essential for scientific research and contrib
 **5. global food security:**
 Maize is a staple food for millions of people around the world. Effective disease management ensures a steady supply of this important crop and plays a critical role in combating hunger and ensuring food security worldwide.
 
-In summary, the classification of diseases in maize is not just a scientific endeavor, but a task with far-reaching implications for agriculture, the economy and global food security.     By investing in advanced data science techniques for maize disease classification and management, we can pave the way for a more resilient and sustainable future.
+In summary, the classification of diseases in maize is not just a scientific endeavor, but a task with far-reaching implications for agriculture, the economy and global food security. By investing in advanced data science techniques for maize disease classification and management, we can pave the way for a more resilient and sustainable future.
 
 ## 3. Data Collection or Generation
 
 Dataset Source: [OSF](https://osf.io/s6ru5/files/osfstorage#) **Important: _only download "Dataset_Original" Folder from "CD&S" Folder._**
 
+**Classification of Corn Diseases**
+
+The idea of the Project is to detect what of a given corn disease is present.
+I have a Dataset available in which three diseases are Classified as following:
+
+**gls:** Gray Leaf Spot, Total number of images: 523
+
+<img src="ImageLib/Gls_30.jpg" alt="GLS image" style="width:200px;"/>
+
+**nlb:** Northern Leaf Blight, Total number of images: 497
+
+<img src="ImageLib/Nlb_10.jpg" alt="NLB image" style="width:200px;"/>
+
+**nls:** Northern Leaf Spot, total number of images: 551
+
+<img src="ImageLib/imageNls.jpg" alt="NLS image" style="width:200px;"/>
 
 ## 4. Modeling
 
