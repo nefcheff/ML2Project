@@ -36,11 +36,11 @@ I have a Dataset available in which three diseases are Classified as following:
 
 **gls:** Gray Leaf Spot, Total number of images: 523
 
-<img src="ImageLib/Gls_30.jpg" alt="GLS image" style="width:200px;"/>
+<img src="ImageLib/imageGls.jpg" alt="GLS image" style="width:200px;"/>
 
 **nlb:** Northern Leaf Blight, Total number of images: 497
 
-<img src="ImageLib/Nlb_10.jpg" alt="NLB image" style="width:200px;"/>
+<img src="ImageLib/imageNlb.jpg" alt="NLB image" style="width:200px;"/>
 
 **nls:** Northern Leaf Spot, total number of images: 551
 
