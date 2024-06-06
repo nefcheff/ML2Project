@@ -33,7 +33,7 @@ def load_and_prepare_datasets(train_dir, test_dir, image_size=(224, 224), batch_
     # Add standardization layer
     normalization_layer = tf.keras.layers.Rescaling(1./255)
 
-    # Normalize the data records
+    # Normalize the datasets
     train_dataset = train_dataset.map(lambda x, y: (normalization_layer(x), y))
     validation_dataset = validation_dataset.map(lambda x, y: (normalization_layer(x), y))
     test_dataset = test_dataset.map(lambda x, y: (normalization_layer(x), y))
@@ -44,6 +44,7 @@ def load_and_prepare_datasets(train_dir, test_dir, image_size=(224, 224), batch_
     test_dataset = test_dataset.cache().prefetch(buffer_size=tf.data.AUTOTUNE)
 
     return train_dataset, validation_dataset, test_dataset
+
 
 def get_data_augmentation():
     # Define the data augmentation layers
