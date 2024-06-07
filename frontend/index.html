@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Classification</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+
+      .container {
+        max-width: 600px;
+      }
+
+      .table-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">Upload an Image for Classification</h1>
+      <form id="upload-form" class="mt-4">
+        <div class="form-group">
+          <label for="file">Choose an image</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="file"
+            name="file"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Upload and Predict
+        </button>
+      </form>
+      <div id="result" class="table-container"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document
+        .getElementById("upload-form")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const formData = new FormData(event.target);
+          const response = await fetch("/predict", {
+            method: "POST",
+            body: formData,
+          });
+          const result = await response.json();
+          displayResult(result);
+        });
+
+      function displayResult(result) {
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `
+                <h2 class="mt-4">Prediction Result</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Predicted Class</th>
+                            <th>Predictions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>${result.predicted_class}</td>
+                            <td>${result.predictions[0]
+                              .map(
+                                (p, index) => `Class ${index}: ${p.toFixed(3)}`
+                              )
+                              .join("<br>")}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+      }
+    </script>
+  </body>
+</html>
