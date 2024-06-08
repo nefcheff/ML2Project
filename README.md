@@ -1,8 +1,8 @@
 # ML2Project
+## Instructions for Students
+Fork this repository into your Git and clone it to your computer. You will then find detailed instructions for this project in the notebook [FollowMe](FollowMe.ipynb).
 
 ## 1. Project Motivation
-
-What is the problem you are trying to solve? What is the motivation behind it? Why is your project relevant?
 
 Agricultural productivity is the backbone of global food security, and maize is one of the world's most important crops. However, maize crops are constantly threatened by various diseases that can severely affect yield and quality. This is where the classification of maize diseases becomes crucial.
 
@@ -158,8 +158,8 @@ Validation Accuracy: Improved but with some fluctuations, indicating possible ov
 Training Loss: Decreased, but at a slower rate due to the regularization.
 Validation Loss: Showed more fluctuations compared to Model 2, indicating the need for more tuning.
 
-Test Loss: 0.4695
-Test Accuracy: 0.8601
+* Test Loss: 0.4695
+* Test Accuracy: 0.8601
 
 Findings:
 
@@ -176,8 +176,8 @@ Validation Accuracy: Improved and aligned well with the training accuracy, indic
 Training Loss: Decreased consistently, showing effective learning.
 Validation Loss: Showed stability with less fluctuation, suggesting improved generalization and robustness.
 
-Test Loss: 0.3670
-Test Accuracy: 0.8651
+* Test Loss: 0.3670
+* Test Accuracy: 0.8651
 
 Findings:
 
@@ -185,6 +185,3 @@ Model 4 exhibits a good balance between training accuracy and loss, similar to M
 
 ### Model 5 EfficientNetB0
 
-## 6. Instructions for use
-
-Fork this repository into your Git and clone it to your computer. You will then find detailed instructions for this project in the notebook [FollowMe](FollowMe.ipynb).
