@@ -1,5 +1,7 @@
 # ML2Project
 
+This Git repository was created as part of the ML2 module exams at the ZHAW by Flavio Gottardo
+
 ## Instructions for Students
 
 Fork this repository into your Git and clone it to your computer. You will then find detailed instructions for this project in the notebook [FollowMe](FollowMe.ipynb).
