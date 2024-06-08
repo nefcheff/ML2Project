@@ -50,6 +50,10 @@ A detailed description of the entire data set can be found in the [CD&S DATASET 
 
 ## 4. Modeling
 
+Ich erarbeitet im verlauf von meinem Projekt 6 Modelle.
+
+1. [Model 1](MyCnnModel.ipynb#model-1)
+
 First i
 I decided to use a pre-trained model from Keras for the task and to fine-tune it. For the base model I use the EfficientNetB0 model which was developed by Google with 1.2 million images in 1000 classes. It is already quite accurate with a top-1 accuracy of 77.1%. The model has about 5.3 million parameters and an input resolution of 224x224 pixels (Documentation: [EfficientNetB0](https://keras.io/api/applications/efficientnet/#efficientnetb0-function))
 
