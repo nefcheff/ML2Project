@@ -9,12 +9,16 @@ Dataset_Kaegel.zip
 DowloadCornRustDesease.ipynb
 TestWatermarkRemover.ipynb
 hystory.ipynb
+MyCnnModel_1.ipynb
+MyCnnModel_2.ipynb
+MyCnnModel_3.ipynb
+MyCnnModel_4.ipynb
 
 #bytecode-compiled .py file
 __pycache__
 
 #Models and Classnames
 modelLib/*
-!modelLib/
+!modelLib/README.md
 uploads/*
-!uploads/
+!uploads/README.md
