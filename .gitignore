@@ -1,10 +1,20 @@
+#Datesets and images
 /Dataset_Original
 Dataset_Original.zip
 /Dataset_Kaegel
 Dataset_Kaegel.zip
 /RustImages
+
+# Legacy ipynb
 DowloadCornRustDesease.ipynb
 TestWatermarkRemover.ipynb
 hystory.ipynb
+
+#bytecode-compiled .py file
 __pycache__
-/modelLib
+
+#Models and Classnames
+modelLib/*
+!modelLib/
+uploads/*
+!uploads/

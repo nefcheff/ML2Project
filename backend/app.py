@@ -9,7 +9,16 @@ app = Flask(__name__, template_folder='../frontend/')
 import tensorflow as tf
 
 # Lade das Modell mit dem absoluten Pfad
-model = tf.keras.models.load_model('C:/Users/flavi/Desktop/Studium/6.Semester/ML2/Projekt/ML2Project/modelLib/model_1.keras')
+#model = tf.keras.models.load_model('../modelLib/model_1.keras')
+
+model_path = os.path.abspath('../ML2Project/modelLib/model_1.keras')
+print("Absolute path to model:", model_path)
+model = tf.keras.models.load_model(model_path)
+
+
+class_names_path = os.path.abspath('../ML2Project/modelLib/class_names.txt')
+with open(class_names_path, 'r') as f:
+        class_names = [line.strip() for line in f.readlines()]
 
 # Definiere die Bildgröße
 IMAGE_SIZE = (224, 224)
@@ -42,11 +51,14 @@ def predict():
         predictions = model.predict(img_array)
         
         # Wahrscheinlichkeiten für jede Klasse zurückgeben
-        predicted_class = np.argmax(predictions, axis=1)
+        predicted_class = np.argmax(predictions, axis=1)[0]
+        predicted_class_name = class_names[predicted_class]
+        predictions_with_names = {class_names[i]: float(predictions[0][i]) for i in range(len(class_names))}
         return jsonify({
-            "predictions": predictions.tolist(),
-            "predicted_class": int(predicted_class[0])
+            "predictions": predictions_with_names,
+            "predicted_class": predicted_class_name
         })
+
 
 if __name__ == '__main__':
     if not os.path.exists('uploads'):
