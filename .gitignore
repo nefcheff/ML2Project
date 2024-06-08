@@ -1,6 +1,7 @@
 #Datesets and images
 /Dataset_Original
 Dataset_Original.zip
+Dataset_Original (2).zip
 /Dataset_Kaegel
 Dataset_Kaegel.zip
 /RustImages
@@ -13,12 +14,17 @@ MyCnnModel_1.ipynb
 MyCnnModel_2.ipynb
 MyCnnModel_3.ipynb
 MyCnnModel_4.ipynb
+EfficientNetB0.ipynb
 
-#bytecode-compiled .py file
+#bytecode-compiled .py file and unused .py file
+backend/test.py
 __pycache__
 
 #Models and Classnames
 modelLib/*
+!modelLib/class_names.txt
+!modelLib/model_4.keras
 !modelLib/README.md
 uploads/*
 !uploads/README.md
+best_model.keras

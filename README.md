@@ -1,5 +1,7 @@
 # ML2Project
+
 ## Instructions for Students
+
 Fork this repository into your Git and clone it to your computer. You will then find detailed instructions for this project in the notebook [FollowMe](FollowMe.ipynb).
 
 ## 1. Project Motivation
@@ -158,8 +160,8 @@ Validation Accuracy: Improved but with some fluctuations, indicating possible ov
 Training Loss: Decreased, but at a slower rate due to the regularization.
 Validation Loss: Showed more fluctuations compared to Model 2, indicating the need for more tuning.
 
-* Test Loss: 0.4695
-* Test Accuracy: 0.8601
+- Test Loss: 0.4695
+- Test Accuracy: 0.8601
 
 Findings:
 
@@ -176,8 +178,8 @@ Validation Accuracy: Improved and aligned well with the training accuracy, indic
 Training Loss: Decreased consistently, showing effective learning.
 Validation Loss: Showed stability with less fluctuation, suggesting improved generalization and robustness.
 
-* Test Loss: 0.3670
-* Test Accuracy: 0.8651
+- Test Loss: 0.3670
+- Test Accuracy: 0.8651
 
 Findings:
 
@@ -185,3 +187,17 @@ Model 4 exhibits a good balance between training accuracy and loss, similar to M
 
 ### Model 5 EfficientNetB0
 
+<img src="ImageLib/outputModel5.png" alt="Model 3 image" style="width:700px;"/>
+
+Performance:
+
+Training and Validation Accuracy:
+The accuracy remains relatively flat throughout the training and fine-tuning phases, hovering around 0.4 for both training and validation.
+There is no significant improvement in accuracy over the epochs, indicating that the model is struggling to learn from the data effectively.
+
+Training and Validation Loss:
+The training loss shows a gradual decrease over the epochs, indicating that the model is learning to minimize the loss function.
+The validation loss also decreases but shows less fluctuation compared to the training loss.
+During the fine-tuning phase, the loss further decreases, but the overall trend suggests that the model's ability to generalize remains limited.
+
+My assumption is hat the reason for the bad training behavior lies in the size of my data set which, despite data augmentation, can have too little influence on this large model.
